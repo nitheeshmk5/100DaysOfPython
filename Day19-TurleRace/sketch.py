@@ -37,4 +37,5 @@ my_screen.onkey(key="a",fun=move_left)
 my_screen.onkey(key="Left",fun=move_left)
 my_screen.onkey(key="c",fun=clear)
 my_screen.onkey(key="1",fun=clear)
+
 my_screen.exitonclick()
