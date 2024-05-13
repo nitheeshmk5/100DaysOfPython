@@ -41,7 +41,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-    from_='+15024303795',
+    from_=os.getenv('NUM'),
     body=f"Today's climate will be {weather_msg}.Day 35 python code exicuted with Python anywhere",
-    to='+919944725360'
+    to=os.getenv('MY_NUMBER')
     )
