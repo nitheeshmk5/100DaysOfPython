@@ -1,0 +1,45 @@
+span {
+  color: red;
+  background-color: yellow;
+}
+
+.red {
+  color: red;
+}
+.red div {
+  width: 200px;
+  height: 200px;
+  border: black;
+  color: red;
+  background-color: red;
+}
+
+.blue {
+  color: skyblue;
+}
+.blue div {
+  width: 200px;
+  height: 200px;
+  border: black;
+  background-color: skyblue;
+}
+
+.green {
+  color: green;
+}
+.green div {
+  width: 200px;
+  height: 200px;
+  border: black;
+  background-color: green;
+}
+
+.orange {
+  color: orange;
+}
+.orange div {
+  width: 200px;
+  height: 200px;
+  border: black;
+  background-color: orange;
+}
