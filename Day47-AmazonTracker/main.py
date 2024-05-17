@@ -20,15 +20,16 @@ contents = res.text
 soup = BeautifulSoup(contents,'lxml')
 price = soup.find(name='span',class_='a-price-whole').getText().split('.')[0]
 
-with smtplib.SMTP('smtp.gmail.com') as connection:
-    connection.starttls()
-    connection.login(
-        user= USER,
-        password=PASSWORD
-    )
+if price < 450:
+    with smtplib.SMTP('smtp.gmail.com') as connection:
+        connection.starttls()
+        connection.login(
+            user= USER,
+            password=PASSWORD
+        )
 
-    connection.sendmail(
-        from_addr=USER,
-        to_addrs='22107041@srcas.ac.in',
-        msg=f'Subject:Keyboard is under price!\nDell keyboard is now {price}'
-    )
+        connection.sendmail(
+            from_addr=USER,
+            to_addrs='22107041@srcas.ac.in',
+            msg=f'Subject:Keyboard is under price!\nDell keyboard is now {price}'
+        )
