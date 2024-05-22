@@ -1,0 +1,40 @@
+{% include "header.html "%}
+    <body>
+        <!-- Navigation-->
+       {% include "navbar.html" %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{all_blogs.image_url}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+                        <div class="post-heading">
+                            <h1>{{ all_blogs.title }}</h1>
+                            <h2 class="subheading">{{ all_blogs.subtitle }}</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            {{ all_blogs.body}}
+                        </p>
+                        <p>
+                            image link &middot;
+                            <a href="{{all_blogs.image_url}}">{{all_blogs.title}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        {% include "footer.html" %}
+    </body>
+</html>
